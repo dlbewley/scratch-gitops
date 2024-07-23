@@ -4,7 +4,6 @@ metadata:
   name: cluster-hub-configs
 spec:
   destination:
-    name: ''
     namespace: openshift-gitops
     server: 'https://kubernetes.default.svc'
   source:
