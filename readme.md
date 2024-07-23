@@ -17,6 +17,7 @@ $ oc apply -k argo-apps/cluster-hub-configs
 
 <details>
   <summary>Application source</summary>
+
 ```yaml
 $ oc kustomize argo-apps/cluster-hub-configs
 apiVersion: argoproj.io/v1alpha1
@@ -37,12 +38,13 @@ spec:
     targetRevision: HEAD
   sources: []
 ```
-<details>
+</details>
 
 Above will create this "application sub resource" (what is the result of an `Application.argoproj.io` called?)
 
 <details>
   <summary>Synced Application source</summary>
+
 ```yaml
 $ oc kustomize cluster/hub
 apiVersion: v1
