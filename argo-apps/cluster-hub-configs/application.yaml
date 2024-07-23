@@ -11,6 +11,6 @@ spec:
     repoURL: 'https://github.com/dlbewley/scratch-gitops.git'
     targetRevision: HEAD
     directory:
-      recurse: true
+      recurse: false
   sources: []
   project: default
