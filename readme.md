@@ -36,7 +36,7 @@ Argo-apps/ holds Applications which may (probably do) point off to remote git re
 
 # Create [the argo](cluster/hub/application.yaml) app to manage the Hub cluster 
 
-This will also create the other apps referenced via the [kustomize](cluster/hub/kustomize.yaml). Should they be abstracted further? What's an app of apps?
+This will also create the other apps referenced via the [kustomization](cluster/hub/kustomization.yaml). Should they be abstracted further? What's an app of apps?
 
 ```bash
 $ oc apply -k cluster/hub
