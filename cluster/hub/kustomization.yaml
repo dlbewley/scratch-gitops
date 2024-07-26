@@ -3,7 +3,10 @@ kind: Kustomization
 
 resources:
   - application.yaml
+  # sync-wave 5
   - ../../argo-apps/olm/metallb/
   - ../../argo-apps/olm/nmstate/
   - ../../argo-apps/olm/rhacm/
+  # sync-wave 10
+  - ../../argo-apps/cfg/metallb/
 
