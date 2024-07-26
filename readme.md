@@ -59,3 +59,4 @@ openshift-gitops   nmstate-operator     Synced        Healthy
 openshift-gitops   rhacm-operator       Synced        Healthy
 ```
 
+![ArgoCD Screenshot](img/argo-ss.png)
