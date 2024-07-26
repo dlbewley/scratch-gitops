@@ -1,0 +1,21 @@
+---
+# duplicated from https://github.com/dlbewley/demo-metallb/blob/main/argo-olm.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: metallb-operator
+  namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  sources:
+    - repoURL: 'https://github.com/dlbewley/demo-metallb'
+      targetRevision: HEAD
+      path: operator/
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      allowEmpty: true
