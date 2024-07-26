@@ -42,6 +42,7 @@ This will also create the other apps referenced via the [kustomization](cluster/
 $ oc apply -k cluster/hub
 application.argoproj.io/cluster-hub-config configured
 application.argoproj.io/metallb-operator configured
+application.argoproj.io/metallb-config configured
 application.argoproj.io/nmstate-operator configured
 application.argoproj.io/rhacm-operator configured
 ```
