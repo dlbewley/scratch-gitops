@@ -1,33 +1,37 @@
-# Given this simple setup
+# Given this setup
+
+Argo-apps/ holds Applications which may (probably do) point off to remote git repositories.
 
 ```
-.
-├── argo-apps
-│   ├── cfg
-│   │   ├── metallb
-│   │   ├── nmstate
-│   │   ├── readme.md
-│   │   └── rhacm
-│   ├── olm
-│   │   ├── kustomization.yaml
-│   │   ├── metallb
-│   │   │   ├── application.yaml
-│   │   │   └── kustomization.yaml
-│   │   ├── nmstate
-│   │   │   ├── application.yaml
-│   │   │   └── kustomization.yaml
-│   │   ├── readme.md
-│   │   └── rhacm
-│   │       ├── application.yaml
-│   │       └── kustomization.yaml
-│   └── readme.md
-├── cluster
-│   ├── hub
-│   │   ├── application.yaml
-│   │   ├── kustomization.yaml
-│   │   └── readme.md
-│   └── readme.md
-└── readme.md
+ .
+├──  argo-apps
+│  ├──  cfg
+│  │  ├──  metallb
+│  │  │  ├──  application.yaml
+│  │  │  └──  kustomization.yaml
+│  │  ├──  nmstate
+│  │  ├──  readme.md
+│  │  └──  rhacm
+│  ├──  olm
+│  │  ├──  kustomization.yaml
+│  │  ├──  metallb
+│  │  │  ├──  application.yaml
+│  │  │  └──  kustomization.yaml
+│  │  ├──  nmstate
+│  │  │  ├──  application.yaml
+│  │  │  └──  kustomization.yaml
+│  │  ├──  readme.md
+│  │  └──  rhacm
+│  │     ├──  application.yaml
+│  │     └──  kustomization.yaml
+│  └──  readme.md
+├──  cluster
+│  ├──  hub
+│  │  ├──  application.yaml
+│  │  ├──  kustomization.yaml
+│  │  └──  readme.md
+│  └──  readme.md
+└──  readme.md
 ```
 
 # Create [the argo](cluster/hub/application.yaml) app to manage the Hub cluster 
