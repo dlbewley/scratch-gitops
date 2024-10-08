@@ -1,0 +1,9 @@
+---
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: cluster-admins
+  annotations:
+    description: allows viewing of Applications in ArgoCD console
+users:
+  - admin
