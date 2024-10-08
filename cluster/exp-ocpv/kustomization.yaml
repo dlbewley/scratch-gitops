@@ -11,5 +11,5 @@ resources:
 
   # sync-wave 10
   - ../../argo-apps/cfg/metallb/
+  - ../../argo-apps/cfg/nmstate/
 
-  - nmstat.yaml
