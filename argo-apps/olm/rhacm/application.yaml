@@ -14,7 +14,7 @@ spec:
   sources:
     - repoURL: 'https://github.com/redhat-cop/gitops-catalog'
       targetRevision: main
-      path: advanced-cluster-management/operator/overlays/release-2.11
+      path: advanced-cluster-management/operator/overlays/release-2.12
   project: default
   syncPolicy:
     automated:
