@@ -1,0 +1,21 @@
+---
+# duplicated from https://github.com/dlbewley/demo-metallb/blob/main/argo-olm.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: local-storage-cfg
+  namespace: openshift-gitops
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  sources:
+    - repoURL: 'https://github.com/dlbewley/scratch-gitops'
+      targetRevision: HEAD
+      path: argo-apps/cfg/local-storage/
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      allowEmpty: true
