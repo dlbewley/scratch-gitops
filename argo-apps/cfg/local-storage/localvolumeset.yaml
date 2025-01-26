@@ -17,7 +17,6 @@ spec:
         operator: Exists
   storageClassName: local-sdb
   volumeMode: Block
-  fstype: ext4
   maxDeviceCount: 1  # <-- Maximum number of devices per node to be used
   deviceInclusionSpec:
     deviceTypes:
