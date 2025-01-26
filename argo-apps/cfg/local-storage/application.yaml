@@ -6,14 +6,14 @@ metadata:
   name: local-storage-cfg
   namespace: openshift-gitops
   annotations:
-    argocd.argoproj.io/sync-wave: "5"
+    argocd.argoproj.io/sync-wave: "9"
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
   sources:
     - repoURL: 'https://github.com/dlbewley/scratch-gitops'
       targetRevision: HEAD
-      path: argo-apps/cfg/local-storage/
+      path: configs/local-storage/
   project: default
   syncPolicy:
     automated:
