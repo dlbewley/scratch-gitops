@@ -10,8 +10,10 @@ spec:
   destination:
     server: 'https://kubernetes.default.svc'
   sources:
-    - repoURL: 'https://github.com/redhat-cop/gitops-catalog'
-      targetRevision: HEAD
+    #- repoURL: 'https://github.com/redhat-cop/gitops-catalog'
+    # targetRevision: HEAD
+    - repoURL: 'https://github.com/dlbewley/gitops-catalog'
+      targetRevision: odf-4.17
       path: openshift-data-foundation-operator/operator/overlays/stable-4.17
   project: default
   syncPolicy:
