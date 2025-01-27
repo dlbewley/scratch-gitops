@@ -10,9 +10,9 @@ spec:
   destination:
     server: 'https://kubernetes.default.svc'
   sources:
-    - repoURL: 'https://github.com/redhat-cop/gitops-catalog'
+    - repoURL: 'https://github.com/dlbewley/demo-nmstate'
       targetRevision: main
-      path: nmstate/operator/overlays/stable
+      path: operator
   project: default
   syncPolicy:
     automated:
