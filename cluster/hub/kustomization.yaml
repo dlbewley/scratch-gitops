@@ -10,9 +10,10 @@ resources:
   - ../../argo-apps/olm/nmstate/
   - ../../argo-apps/olm/rhacm/
   - ../../argo-apps/olm/odf/
+  - ../../argo-apps/olm/virtualization/
   # sync-wave 9
   - ../../argo-apps/cfg/local-storage/
+  - ../../argo-apps/cfg/odf/
   # sync-wave 10
   - ../../argo-apps/cfg/metallb/
-  - ../../argo-apps/cfg/odf/
 
