@@ -15,5 +15,6 @@ resources:
   - ../../argo-apps/cfg/local-storage/
   - ../../argo-apps/cfg/odf/
   # sync-wave 10
+  - ../../argo-apps/cfg/nmstate/
   - ../../argo-apps/cfg/metallb/
 
