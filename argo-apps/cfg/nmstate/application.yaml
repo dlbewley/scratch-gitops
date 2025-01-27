@@ -19,24 +19,3 @@ spec:
     automated:
       prune: false
       allowEmpty: true
----
-# original
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: machine-net-config
-  namespace: openshift-gitops
-  annotations:
-    argocd.argoproj.io/sync-wave: "11"
-spec:
-  destination:
-    server: 'https://kubernetes.default.svc'
-  sources:
-    - repoURL: 'https://github.com/dlbewley/demo-virt'
-      targetRevision: HEAD
-      path: networking/components/machine-net
-  project: default
-  syncPolicy:
-    automated:
-      prune: true
-      allowEmpty: true
