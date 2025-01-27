@@ -12,7 +12,7 @@ spec:
   sources:
     - repoURL: 'https://github.com/redhat-cop/gitops-catalog'
       targetRevision: HEAD
-      path: virtualization-operator/operator/base
+      path: virtualization-operator/base
   project: default
   syncPolicy:
     automated:
