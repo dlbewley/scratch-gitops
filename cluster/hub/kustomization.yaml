@@ -17,4 +17,5 @@ resources:
   # sync-wave 10
   - ../../argo-apps/cfg/nmstate/
   - ../../argo-apps/cfg/metallb/
+  - ../../argo-apps/cfg/homelab-net/
 
