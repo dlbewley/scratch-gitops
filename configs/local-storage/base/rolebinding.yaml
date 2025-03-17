@@ -11,5 +11,5 @@ roleRef:
   name: localstorage-mgr
 subjects:
 - kind: ServiceAccount
-  name: openshift-gitops-argocd-server
+  name: openshift-gitops-argocd-application-controller
   namespace: openshift-local-storage
