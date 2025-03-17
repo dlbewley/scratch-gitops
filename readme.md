@@ -12,6 +12,7 @@ Argo-apps/ holds Applications which may (probably do) point off to remote git re
 
 <details>
 <summary>File structure of repository</summary>
+
 ```
 $ tree -L 4 .
  .
@@ -82,6 +83,7 @@ $ tree -L 4 .
 │       └──  storagecluster.yaml
 └──  readme.md
 ```
+
 </details>
 
 # Create [the argo app](cluster/hub/application.yaml) to manage the 'hub' cluster 
