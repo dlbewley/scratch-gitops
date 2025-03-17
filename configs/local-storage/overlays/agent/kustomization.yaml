@@ -4,4 +4,6 @@ kind: Kustomization
 
 resources:
   - ../../base
-  - localvolumeset.yaml
+
+patches:
+  - path: patch-localvolumeset.yaml
