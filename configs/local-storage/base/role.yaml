@@ -5,7 +5,6 @@ kind: Role
 metadata:
   creationTimestamp: null
   name: localstorage-mgr
-  namespace: openshift-local-storage
 rules:
 - apiGroups:
   - local.storage.openshift.io
