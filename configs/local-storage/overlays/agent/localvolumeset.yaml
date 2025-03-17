@@ -1,0 +1,26 @@
+---
+apiVersion: "local.storage.openshift.io/v1alpha1"
+kind: LocalVolumeSet
+metadata:
+  name: local-block
+spec:
+  nodeSelector:
+    nodeSelectorTerms:
+      - matchExpressions:
+          - key: cluster.ocs.openshift.io/openshift-storage
+            operator: In
+            values:
+              - ""
+  tolerations:
+      - key: "node.ocs.openshift.io/storage"
+        operator: Exists
+  storageClassName: local-sdb
+  volumeMode: Block
+  maxDeviceCount: 1  # <-- Maximum number of devices per node to be used
+  deviceInclusionSpec:
+    deviceTypes:
+    - disk
+    deviceMechanicalProperties:
+    - NonRotational   # <-- For HDD change to Rotational
+    minSize: 512Gi   # <-- Uncomment and modify to limit the minimum size of disk used
+    maxSize: 512Gi   # <-- Uncomment and modify to limit the maximum size of disk used

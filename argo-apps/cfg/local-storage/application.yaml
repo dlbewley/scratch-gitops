@@ -1,5 +1,4 @@
 ---
-# duplicated from https://github.com/dlbewley/demo-metallb/blob/main/argo-olm.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -13,7 +12,7 @@ spec:
   sources:
     - repoURL: 'https://github.com/dlbewley/scratch-gitops'
       targetRevision: HEAD
-      path: configs/local-storage/
+      path: configs/local-storage/overlays/agent
   project: default
   syncPolicy:
     automated:
