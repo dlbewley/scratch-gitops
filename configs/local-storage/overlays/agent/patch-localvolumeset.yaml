@@ -6,5 +6,5 @@ metadata:
   namespace: openshift-local-storage
 spec:
   deviceInclusionSpec:
-    minSize: 512Gi
-    maxSize: 512Gi 
+    minSize: 1Ti
+    maxSize: 1Ti
