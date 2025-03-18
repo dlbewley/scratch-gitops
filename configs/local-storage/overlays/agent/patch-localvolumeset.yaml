@@ -5,6 +5,15 @@ metadata:
   name: local-block
   namespace: openshift-local-storage
 spec:
+  nodeSelector:
+    nodeSelectorTerms:
+      - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+              - master-1
+              - master-2
+              - master-3
   deviceInclusionSpec:
     minSize: 1Ti
     maxSize: 1Ti
