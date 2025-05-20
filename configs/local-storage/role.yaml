@@ -1,0 +1,15 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+  name: argocd-priv
+  namespace: openshift-local-storage
+rules:
+- apiGroups:
+  - 'local.storage.openshift.io'
+  resources:
+  - localvolumesets
+  verbs:
+  - '*'
